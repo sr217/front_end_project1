@@ -5,49 +5,35 @@
     <title>Exercise 1</title>
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1"
-      name="viewport"
-    />
-
-  <style>
-  .container{
-    /* Step 1: Set display to grid */
-      display:grid;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 250px 600px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "sd sd sd main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      gap: 5px;
-      border: 2px solid yellow;
-  }
-  .box{
-    border: 1px solid red;
-    background: #F8FA9D;
-    }
-/* Assign grid area below */
-  .header{
-    grid-area: hd;
-  }
-  .footer{
-    grid-area: ft;
-  }
-  .sidebar{
-    grid-area: sd;
-  }
-  .content{
-    grid-area: main;
-  }
-  </style>
+      name="viewport"/>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/blogcard.css">
   </head>
 
   <body>
   <div class = "container">
-    <div class="header box">Stuart's Adventures</div>
+    <div class="title box">Stuart's Adventures</div>
+    <div class= "header box">Image goes here</div>
     <div class="sidebar box">Archives</div>
-    <div class="content box">Blogs</div>
+    <div class="content box">
+      <div class = "blog box">
+        <img src = "img/mtb_bike_1.jpg" alt="" class="blog_image">
+        <div class= blog_content>
+          <p>
+            The year was 2020, One month after Edinburgh had went into Lockdown. I finished my work for the day and decided to head up to my local trails.
+          </p>
+          <p>
+            The trail I head up to is a steep hill, just off the main path that heads up to the Bonaly Resevoir. This particular trail is known as 'Bonaly Downhill' and is a popular mountain biking destination for locals
+            and riders outside of the Edinburgh area.
+          </p>
+        </div>
+        <div>
+          <a href="./" class="blog_link">Read More</a>
+        </div>
+      </div>
+      <div class = "blog box">Blog 2</div>
+      <div class = "blog box">Blog 3</div>
+    </div>
     <div class="footer box">Footer</div>
   </div>
   </body>

@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+}
+
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 200px 300px 300px;
+      grid-template-rows: 100px 100px 600px 50px;
+      grid-template-areas: 
+      "ttle ttle ttle ttle ttle ttle ttle ttle"
+      "hdr hdr hdr hdr hdr hdr hdr hdr"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      gap: 5px;
+      border: 2px solid black;
+  }
+  .box{
+    /* border: 1px solid black */
+    
+    }
+/* Assign grid area below */
+  .title{
+    grid-area: ttle;
+  }
+  .header{
+    grid-area: hdr;
+  }
+  .footer{
+    grid-area: ft;
+  }
+  .sidebar{
+    grid-area: sd;
+  }
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: main;
+  }
