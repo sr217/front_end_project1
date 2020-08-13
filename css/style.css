@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background-color: #2D2327
 }
 
 .container{
@@ -9,7 +10,6 @@ body {
       grid-template-rows: repeat(autofit, minmax(300px, 1fr));
       grid-template-areas: 
       "ttle ttle ttle ttle ttle ttle ttle ttle"
-      "hdr hdr hdr hdr hdr hdr hdr hdr"
       "sd main main main main main main main"
       "ft ft ft ft ft ft ft ft";
       gap: 5px;
@@ -17,12 +17,10 @@ body {
       height: 100vh;
   }
   .box{
-    border: 1px solid black;
+    border: 1px solid #62466B;
     }
 /* Assign grid area below */
-  .image{
-    grid-area: hdr;
-  }
+
   .footer{
     grid-area: ft;
   }

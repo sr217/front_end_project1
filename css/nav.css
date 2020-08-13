@@ -4,6 +4,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: black;
+  }
+  h1{
+      color: white;
   }
 
 .nav_links li{
