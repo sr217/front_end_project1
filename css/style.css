@@ -3,12 +3,10 @@ body {
 }
 
 .container{
-    /* Step 1: Set display to grid */
+    
       display:grid;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 200px 300px 300px;
-      grid-template-rows: 100px 100px 600px 50px;
+      grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+      grid-template-rows: repeat(autofit, minmax(300px, 1fr));
       grid-template-areas: 
       "ttle ttle ttle ttle ttle ttle ttle ttle"
       "hdr hdr hdr hdr hdr hdr hdr hdr"
@@ -16,16 +14,13 @@ body {
       "ft ft ft ft ft ft ft ft";
       gap: 5px;
       border: 2px solid black;
+      height: 100vh;
   }
   .box{
-    /* border: 1px solid black */
-    
+    border: 1px solid black;
     }
 /* Assign grid area below */
-  .title{
-    grid-area: ttle;
-  }
-  .header{
+  .image{
     grid-area: hdr;
   }
   .footer{
