@@ -1,13 +1,15 @@
 header{
     grid-area: ttle;
     display: flex;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: black;
+    margin:0px;
+    background: #A9A9A9;
   }
   h1{
-      color: white;
+      color: black;
   }
 
 .nav_links li{
@@ -16,6 +18,15 @@ header{
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-
 }
 
+.nav_links li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.nav_links li a:hover {
+    color: #d3d3d3;
+}

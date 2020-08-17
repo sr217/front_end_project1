@@ -1,0 +1,28 @@
+.sidebar {
+    display: inline;
+}
+.archive_links {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.archive_links li {
+    font-size: 36px;
+}
+
+.archive_links li a{
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.archive_links li a:hover{
+    color: #d3d3d3;
+}
