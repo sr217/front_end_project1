@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
+@media only screen and (max-width: 1920px) {
+  .container{
+        
+          display:grid;
+          grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+          grid-template-rows: repeat(autofit, minmax(200px, 1fr));
+          grid-template-areas: 
+          "nav nav nav nav nav nav nav nav"
+          "ban ban ban ban ban ban ban ban"
+          "sd sd sd sd sd sd sd sd"
+          "main main main main main main main main"
+          "ft ft ft ft ft ft ft ft";
+          height: 100vh;
+      }
+      .nav {
+        grid-area: nav;
+      }
+      .banner{
+      grid-area: ban;
+      }
+      .sidebar{
+        grid-area: sd;
+        background: #A9A9A9;
+      }
+      .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-area: main;
+      }
+      .banner-image {
+        width: 100%;
+        height: 300px;
+        padding: 0px;
+      }
+    
+      .profile_blog_image {
+        width: 500px;
+        height: 400px;
+        box-shadow: 0 0 3px rgba(0,0,0,1);
+        flex-shrink: 0;
+    }
+    
+    .social_icon {
+        padding-top: 10px;
+        mix-blend-mode: multiply;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+    .footer{
+      grid-area: ft;
+      background: #A9A9A9;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      
+    }
+    
+    .footer h3 {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    header{
+      grid-area: nav;
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+      margin:0px;
+      background: #A9A9A9;
+    }
+    h1{
+        color: black;
+    }
+  
+    h1 a {
+      color: black;
+      text-decoration: none;
+      transition-duration: 0.3s;
+      }
+  
+  h1 a:hover {
+      color: #d3d3d3;
+  }
+  
+  .nav_links li{
+      display: inline;
+      padding: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+  }
+  
+  .nav_links li a {
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+      transition-duration: 0.3s;
+  }
+  
+  .nav_links li a:hover {
+      color: #d3d3d3;
+      }
+      .blog {
+        margin: 0 auto;
+        /*padding: 5px;*/
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        box-shadow: 0 0 3px rgba(0,0,0,1);
+    }
+    h2, p {
+        padding: 10px;
+    }
+    
+    .blog_image {
+        width: 500px;
+        height: 400px;
+    }
+    .hvr-bounce-out {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+      }
+      .hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      }
+    .blog_content {
+        background: #fafafa;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .small_flag {
+        height: 30px;
+        width: 30px;
+    
+    }
+
+    .sidebar {
+      display: inline;
+  }
+  .archive_links {
+      padding-left: 0px;
+      list-style-type: none;
+  }
+  
+  ul {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-evenly;
+  }
+  
+  .archive_links li {
+      font-size: 36px;
+  }
+  
+  .archive_links li a{
+      font-size: 36px;
+      text-decoration: none;
+      color: black;
+      transition-duration: 0.3s;
+  }
+  
+  .archive_links li a:hover{
+      color: #d3d3d3;
+  }
+}
+    
