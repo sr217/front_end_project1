@@ -4,25 +4,31 @@
 /* 1280px screen width - Macbook Pro 13 inch*/
 body {
     margin: 0px;
+    font-family: Montserrat;
 }  
 
 .container{
         
           display:grid;
-          grid-template-columns: repeat(autofit, minmax(200px, 1fr));
-          grid-template-rows: repeat(autofit, minmax(100px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+          grid-template-rows: repeat(auto-fit, minmax(25px, auto));
           grid-template-areas: 
           "nav nav nav nav nav nav nav nav"
           "ban ban ban ban ban ban ban ban"
           "sd sd sd sd sd sd sd sd"
           "main main main main main main main main"
+          "main main main main main main main main"
+          "main main main main main main main main"
           "ft ft ft ft ft ft ft ft";
           height: 100vh;
       }
-      .banner-image{
-
+      .banner{
       grid-area: ban;
+      }
 
+      .banner-image {
+        max-width:100%;
+        max-height:100%;
       }
       .archive{
         grid-area: sd;
@@ -33,13 +39,8 @@ body {
         flex-direction: row;
         justify-content: center;
         grid-area: main;
+        padding: 5px;
       }
-      .banner-image {
-        width: 1280px;
-        height: 150px;
-        padding: 0px;
-      }
-    
       .profile_blog_image {
         width: 250px;
         height: 200px;
@@ -65,6 +66,7 @@ body {
     
     .footer h3 {
         font-size: 12px;
+        margin: 0px;
     }
 
     /* NAV BAR */
@@ -112,20 +114,17 @@ body {
   .nav_links li a:hover {
       color: #d3d3d3;
       }
+
+ /* BLOG CARDS */
       .blog {
         margin: 0 auto;
         /*padding: 5px;*/
         display: flex;
         flex-direction: column;
-        max-width: 250px;
+        max-width: 225px;
         box-shadow: 0 0 3px rgba(0,0,0,1);
     }
 
-    /* BLOG CARDS */
-
-    h2, p {
-        padding: 10px 0px 0px 0px;
-    }
     h2 {
         font-size: 12px
     }
@@ -134,8 +133,8 @@ body {
     }
     
     .blog_image {
-        width: 250px;
-        height: 200px;
+        width: 225px;
+        height: 175px;
     }
     .hvr-bounce-out {
         display: inline-block;
@@ -154,8 +153,17 @@ body {
       }
     .blog_content {
         background: #fafafa;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .blog_content > h2 {
+        margin: 0px;
+    }
+
+    .blog_content > p {
+        margin: 0px;
+        padding: 0px 5px 0px 5px;
     }
     
     .small_flag {
