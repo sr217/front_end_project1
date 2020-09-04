@@ -180,14 +180,14 @@ h1, h2, h3, p {
 }
 
 .footer > h3 {
-    margin: 2%;
+    margin: 0.3%;
 
 }
 
 .social_icon {
     padding-top: 10px;
     mix-blend-mode: multiply;
-    width: 2vw;
+    width: 1.5vw;
     height: 2vh;
     flex-shrink: 0;
 }
