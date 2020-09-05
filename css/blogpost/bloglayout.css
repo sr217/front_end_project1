@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
+
+body {
+    margin: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
 .container {
 
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
-    grid-template-rows: repeat(autofit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15%, auto-fit));
+    grid-template-rows: repeat(auto-fit, minmax(10%, auto-fit));
     grid-template-areas: 
     "nav nav nav nav nav nav nav nav"
     "main main main main main main main main"
@@ -13,46 +21,73 @@
 
 }
 
-/*.box {
-    border: 1px solid black;
-}*/
+/* Navigation Bar CSS */
 
-.nav {
-    grid-area: nav;
-}
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin:0px;
+        background: #A9A9A9;
+    }
+    .nav > h1{
+        color: black;
+        padding: 0px 0px 0px 30px;
+    }
+    
+    .nav > h1 > a {
+        color: black;
+        text-decoration: none;
+        transition-duration: 0.3s;
+    }
+    
+    .nav > h1 > a:hover {
+        color: #d3d3d3;
+        }
+    
+    .nav_links > li{
+        display: inline;
+        padding: 0px 30px 0px 30px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    
+    .nav_links > li > a {
+        text-decoration: none;
+        color: black;
+        transition-duration: 0.3s;
+    }
+    
+    .nav_links > li > a:hover {
+        color: #d3d3d3;
+        }
+
+
+/* Grid Css */
 
 .content {
     grid-area: main;
     display: grid;
-    grid-template-columns: minmax(200px, 1fr);
-    grid-template-rows: minmax(200px, 1fr);
+    grid-template-columns: minmax(100px, 1fr);
+    grid-template-rows: minmax(100px, 1fr);
     grid-template-areas:
     "hd1 hd1 hd1 hd1 hd1 hd1 hd1 hd1"
-    "hd2 hd2 hd2 hd2 hd2 hd2 hd2 hd2"
-    "hd3 hd3 hd3 hd3 hd3 hd3 hd3 hd3";
+    "hd1 hd1 hd1 hd1 hd1 hd1 hd1 hd1"
+    "hd1 hd1 hd1 hd1 hd1 hd1 hd1 hd1";
     gap: 10px;
 }
 
-.area1 {
+.area {
     grid-area: hd1;
     border-bottom: 0.5px solid black;
     display: flex;
-    flex-direction: row;
-
-}
-
-.area2 {
-    grid-area: hd2;
-    border-bottom: 0.5px solid black;
-    display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
 
-.area3 {
-    grid-area: hd3;
-    display: flex;
-    flex-direction: row;   
-}
 
 .content {
     display: flex;
@@ -65,14 +100,17 @@
 
 .content > h1 {
     padding: 0px 0px 0px 20px;
+    margin: 0px;
 }
 
 .content > h2 {
     padding: 0px 0px 0px 20px;
+    margin: 0px;
 }
 
 .content > h3 {
     padding: 0px 0px 0px 20px;
+    margin: 0px;
 }
 .social {
     grid-area: sm;
@@ -87,8 +125,8 @@
 }
 
 .profile_blog_image {
-    width: 500px;
-    height: 400px;
+    width: 30vw;
+    height: 100%;
     box-shadow: 0 0 3px rgba(0,0,0,1);
     flex-shrink: 0;
 }
