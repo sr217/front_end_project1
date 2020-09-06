@@ -171,25 +171,26 @@ body {
 
 /* Footer CSS */
 
-.footer{
+.footer {
     grid-area: ft;
-    background: #A9A9A9;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 50px;
+    background: #A9A9A9;
 }
 
-.footer > h3 {
-    margin: 0.3%;
+.footer h3 {
+    padding-top: 10px;
+    font-size: 12px;
 
 }
 
 .social_icon {
     padding-top: 10px;
     mix-blend-mode: multiply;
-    width: 1.5vw;
-    height: 2vh;
-    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
 }
 /* For small screens*/
 @media screen and (min-width:0px) and (max-width: 499px) {
@@ -231,18 +232,18 @@ body {
   height: 30vh;
 }
 
-.social_icon {
+/*.social_icon {
   padding-top: 2px;
   mix-blend-mode: multiply;
   width: 2.5vw;
   height: 1.5vh;
   flex-shrink: 0;
-}
+}*/
 
-.footer > h3 {
+/*.footer > h3 {
   margin: 1%;
 
-}
+}*/
 
 }
 /* For Medium screens*/
@@ -284,18 +285,13 @@ body {
   height: 50vh;
 }
 
-.social_icon {
+/*.social_icon {
   padding-top: 5px;
   mix-blend-mode: multiply;
   width: 2.5vw;
   height: 1.5vh;
   flex-shrink: 0;
-}
-
-.footer > h3 {
-  margin: 0.3%;
-
-}
+}*/
 
 
 }
